@@ -5,11 +5,11 @@ import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Provider } from 'react-redux'
-import store from './App/Store.js';
+import Store from './App/Store';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <Provider store={store}>
+   <Provider store={Store}>
       <App />
     </Provider>
   </StrictMode>,
